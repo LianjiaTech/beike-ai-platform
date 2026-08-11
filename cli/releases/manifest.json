@@ -20,8 +20,8 @@
         {
           "os": "windows",
           "arch": "amd64",
-          "url": "https://github.com/hushunxu/beike-ai-platform/releases/download/v0.2.22/beike-win32-x64-0.2.22.tar.gz",
-          "sha256": "57d9e56186a0700897caa51972a35130bbd92361b080cd8cf753e442441e4844"
+          "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/v0.2.22/beike-win32-x64-0.2.22.tar.gz",
+          "sha256": "8eae8ee47eb08bc4f59c3a8c336e42d6992870b22904fc36a561cfa45f9815cd"
         }
       ]
     },
