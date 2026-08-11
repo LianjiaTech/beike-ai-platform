@@ -45,4 +45,6 @@ CLI 源码和 Skill 内容均在私有 `beike-skill` 仓库维护；这里只发
 
 ## 📝 许可
 
-商业软件，仅限授权用户使用。
+[Apache License 2.0](./LICENSE)
+
+Copyright 2026 LianjiaTech
