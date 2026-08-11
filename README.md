@@ -43,8 +43,8 @@
 
 CLI 源码和 Skill 内容均在私有 `beike-skill` 仓库维护；这里只发布编译后的二进制和打包的 Skill zip（托管在 GitHub Releases）。
 
-## 📝 许可
+## 📝 隐私政策
 
-[Apache License 2.0](./LICENSE)
+本项目运行时会调用贝壳平台 API，使用相关 API 需要遵守隐私政策：
 
-Copyright 2026 LianjiaTech
+https://m.ke.com/user/commonProtocol?id=beike_agent_privacy_protocol
