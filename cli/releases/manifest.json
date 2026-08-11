@@ -8,14 +8,14 @@
         {
           "os": "darwin",
           "arch": "arm64",
-          "url": "https://github.com/hushunxu/beike-ai-platform/releases/download/v0.2.22/beike-darwin-arm64-0.2.22.tar.gz",
-          "sha256": "4e409e03b2063ae3db59ba6d82b489b6c18436ef0f909808b43c0bf6957726a2"
+          "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/v0.2.22/beike-darwin-arm64-0.2.22.tar.gz",
+          "sha256": "618cb592dce7ff8ec8beae9fe677a1ee7d67a387beb23913273f52b243d78981"
         },
         {
           "os": "darwin",
           "arch": "amd64",
-          "url": "https://github.com/hushunxu/beike-ai-platform/releases/download/v0.2.22/beike-darwin-x64-0.2.22.tar.gz",
-          "sha256": "cbfc75351635eeb711b22f003ae9bc8909de0b7c257302e1dd44852b4634491c"
+          "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/v0.2.22/beike-darwin-x64-0.2.22.tar.gz",
+          "sha256": "84bc185345ed2eb41a1e96dbc2391337cb015c905f67b80c38880dc9c39cdfe4"
         },
         {
           "os": "windows",
