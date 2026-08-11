@@ -1,0 +1,5 @@
+.build/
+skills/dist/*.zip
+skills/dist/*.zip.sha256
+.idea/
+.DS_Store
