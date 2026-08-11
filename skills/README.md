@@ -19,17 +19,17 @@
 ### 安装全部 Skills
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/skills/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/skills/install.sh | bash
 ```
 
 ### 安装指定 Skills
 
 ```bash
 # 安装单个或多个 skill
-curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/skills/install.sh | bash -s -- beike-buy beike-rent
+curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/skills/install.sh | bash -s -- beike-buy beike-rent
 
 # 安装列表
-curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/skills/install.sh | bash -s -- beike-buy beike-market beike-policy
+curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/skills/install.sh | bash -s -- beike-buy beike-market beike-policy
 ```
 
 安装器会自动识别当前宿主的用户级 Skill 目录：WorkBuddy 使用 `~/.workbuddy/skills/`，Claude Code 使用 `~/.claude/skills/`，Codex 使用 `~/.codex/skills/`，OpenClaw 使用 `~/.openclaw/skills/`，Hermes 使用 `${HERMES_HOME:-~/.hermes}/skills/`；无法识别时回退到通用目录 `~/.agents/skills/`。
@@ -37,13 +37,13 @@ curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/
 也可以通过 `--skills-dir` 或环境变量 `BEIKE_SKILLS_DIR` 指定目录：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/skills/install.sh | bash -s -- --skills-dir "$HOME/.workbuddy/skills" beike-buy
+curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/skills/install.sh | bash -s -- --skills-dir "$HOME/.workbuddy/skills" beike-buy
 ```
 
 安装器默认检测并安装 Skills 共用的 `beike` CLI；无论安装一个、多个还是全部 Skills，都只安装一次。已有 CLI 不会被覆盖。如只需要 Skill 定义，可增加 `--no-cli`：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/skills/install.sh | bash -s -- --no-cli beike-buy
+curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/skills/install.sh | bash -s -- --no-cli beike-buy
 ```
 
 首次使用前，先运行 `beike login` 打开登录页获取 API Key（链接自动携带当前平台来源），然后执行：

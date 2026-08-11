@@ -7,14 +7,14 @@
 ### macOS / Linux
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/cli/releases/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/cli/releases/install.sh | bash
 ```
 
 ### 指定版本
 
 ```bash
 # 查看 releases/manifest.json 获取可用版本
-curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/cli/releases/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/cli/releases/install.sh | bash
 ```
 
 ## 初始化

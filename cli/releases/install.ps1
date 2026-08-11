@@ -1,6 +1,6 @@
 # 贝壳 CLI 安装脚本（Windows / PowerShell 5.1+）
 # 用法：
-#   powershell -ExecutionPolicy Bypass -Command "irm https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/cli/releases/install.ps1 | iex"
+#   powershell -ExecutionPolicy Bypass -Command "irm https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/cli/releases/install.ps1 | iex"
 # 选项：
 #   -NoForce   已有安装时不覆盖（默认会覆盖）
 
@@ -9,7 +9,7 @@ param([switch]$NoForce)
 $ErrorActionPreference = 'Stop'
 $overwrite = -not $NoForce
 
-$ManifestUrl = 'https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/cli/releases/manifest.json'
+$ManifestUrl = 'https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/cli/releases/manifest.json'
 $InstallDir = Join-Path $env:LOCALAPPDATA 'beike'
 $ExePath = Join-Path $InstallDir 'beike.exe'
 

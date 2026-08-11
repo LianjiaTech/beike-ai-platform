@@ -18,7 +18,7 @@
 
 ```bash
 # 安装
-curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/cli/releases/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/cli/releases/install.sh | bash
 
 # 保存 API Key
 beike auth <YOUR_API_KEY> --save
@@ -37,13 +37,13 @@ beike buy search -c 北京 -q "朝阳区"
 ```bash
 # 安装全部（自动安装共用的 beike CLI）
 
-curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/skills/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/skills/install.sh | bash
 
 # 或只装特定 Skill
-curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/skills/install.sh | bash -s -- beike-buy beike-rent
+curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/skills/install.sh | bash -s -- beike-buy beike-rent
 
 # 可选：显式指定宿主的 Skill 目录
-curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/skills/install.sh | bash -s -- --skills-dir "$HOME/.workbuddy/skills" beike-buy
+curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/skills/install.sh | bash -s -- --skills-dir "$HOME/.workbuddy/skills" beike-buy
 
 # 保存 API Key
 beike auth <YOUR_API_KEY> --save

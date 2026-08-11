@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 # 贝壳 CLI 安装脚本（macOS / Linux）
-# curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/cli/releases/install.sh | bash
+# curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/cli/releases/install.sh | bash
 if [ -z "${BASH_VERSION:-}" ]; then
     exec bash "$0" "$@"
 fi
 set -uo pipefail
 
 BEIKE_BASE_URL="${BEIKE_RELEASE_URL:-https://github.com/LianjiaTech/beike-ai-platform/releases/download}"
-MANIFEST_URL="${BEIKE_MANIFEST_URL:-https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/cli/releases/manifest.json}"
+MANIFEST_URL="${BEIKE_MANIFEST_URL:-https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/cli/releases/manifest.json}"
 FORCE=1
 
 usage() {
@@ -100,7 +100,7 @@ main() {
     os_name="$(uname -s | tr '[:upper:]' '[:lower:]')"
     if [[ "$os_name" == *"mingw"* || "$os_name" == *"cygwin"* || "$os_name" == *"msys"* ]]; then
         echo "Windows 请使用 PowerShell 安装（本脚本不支持 Git Bash）：" >&2
-        echo "  powershell -ExecutionPolicy Bypass -Command \"irm https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/cli/releases/install.ps1 | iex\"" >&2
+        echo "  powershell -ExecutionPolicy Bypass -Command \"irm https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/cli/releases/install.ps1 | iex\"" >&2
         exit 1
     fi
 

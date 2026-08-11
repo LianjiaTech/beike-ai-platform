@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # 贝壳 Skills 安装脚本（macOS / Linux）
 # 用法：
-#   curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/skills/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/skills/install.sh | bash
 #   curl -fsSL ... | bash -s -- beike-buy beike-rent（安装指定 skills）
 
 if [ -z "${BASH_VERSION:-}" ]; then
@@ -11,9 +11,9 @@ set -uo pipefail
 
 SKILLS_DIR_EXPLICIT="${BEIKE_SKILLS_DIR:-}"
 BEIKE_SKILLS_DIR=""
-MANIFEST_URL="${BEIKE_MANIFEST_URL:-https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/skills/manifest.json}"
-CLI_INSTALL_URL="${BEIKE_CLI_INSTALL_URL:-https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/cli/releases/install.sh}"
-CLI_INSTALL_PS1_URL="${BEIKE_CLI_INSTALL_PS1_URL:-https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/cli/releases/install.ps1}"
+MANIFEST_URL="${BEIKE_MANIFEST_URL:-https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/skills/manifest.json}"
+CLI_INSTALL_URL="${BEIKE_CLI_INSTALL_URL:-https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/cli/releases/install.sh}"
+CLI_INSTALL_PS1_URL="${BEIKE_CLI_INSTALL_PS1_URL:-https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/cli/releases/install.ps1}"
 SKIP_CLI=0
 
 usage() {
@@ -21,7 +21,7 @@ usage() {
 贝壳 Skills 安装脚本
 
 用法:
-  curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/main/skills/install.sh | bash
+  curl -fsSL https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/skills/install.sh | bash
   curl -fsSL ... | bash -s -- beike-buy beike-rent
 
 选项:
