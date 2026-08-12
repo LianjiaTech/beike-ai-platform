@@ -1,5 +1,5 @@
 {
-  "latest": "0.1.4",
+  "latest": "1.1.0",
   "skills": [
     {
       "name": "beike-buy",
@@ -66,10 +66,10 @@
     },
     {
       "name": "beike-assistant",
-      "version": "0.1.6",
+      "version": "1.1.0",
       "archiveName": "beike-assistant-skill",
-      "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/skills-2026.08.12/beike-assistant-skill-0.1.6.zip",
-      "sha256": "d2f08291ef3b9c866d9a87eddcc7be1232c1221ff92f9d1b4fc655b51ef4233c"
+      "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/skills-2026.08.12-2/beike-assistant-skill-1.1.0.zip",
+      "sha256": "76d91bb6cde957cdc657ffc5697a5ed9c0d76f5d86ece3efb80d9ec814e3b6fe"
     }
   ]
 }
