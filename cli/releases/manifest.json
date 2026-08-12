@@ -1,6 +1,24 @@
 {
-  "latest": "0.2.23",
+  "latest": "0.2.24",
   "releases": [
+    {
+      "version": "0.2.24",
+      "released_at": "2026-08-12T07:55:27Z",
+      "binaries": [
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/v0.2.24/beike-darwin-arm64-0.2.24.tar.gz",
+          "sha256": "8d8cd52e578c2efa3a12ede266bd147b6a0c78336569dadf5e7f773e94a30184"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/v0.2.24/beike-darwin-x64-0.2.24.tar.gz",
+          "sha256": "a1a41459d4db84baa3067d1768d92742291a26fcb4ef39cbe07ec8769001c0c8"
+        }
+      ]
+    },
     {
       "version": "0.2.23",
       "released_at": "2026-08-12T06:09:19Z",
