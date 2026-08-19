@@ -96,7 +96,9 @@ try {
     Write-Host ''
     Write-Host "✓ beike CLI $ver 已安装到 $ExePath"
     Write-Host ''
-    Write-Host '请重新打开终端，然后运行 beike login 获取并保存 API Key'
+    if ($env:BEIKE_SKIP_LOGIN_HINT -ne '1') {
+        Write-Host '请重新打开终端，然后运行 beike login 获取并保存 API Key'
+    }
 }
 finally {
     Remove-Item -Recurse -Force $tmp -ErrorAction SilentlyContinue

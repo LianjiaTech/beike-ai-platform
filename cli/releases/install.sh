@@ -8,6 +8,7 @@ set -uo pipefail
 
 BEIKE_BASE_URL="${BEIKE_RELEASE_URL:-https://github.com/LianjiaTech/beike-ai-platform/releases/download}"
 MANIFEST_URL="${BEIKE_MANIFEST_URL:-https://raw.githubusercontent.com/LianjiaTech/beike-ai-platform/master/cli/releases/manifest.json}"
+SKIP_LOGIN_HINT="${BEIKE_SKIP_LOGIN_HINT:-0}"
 FORCE=1
 
 usage() {
@@ -185,12 +186,14 @@ main() {
     echo ""
     echo "运行以下命令开始使用："
     echo "  beike --help"
-    echo ""
-    echo "下一步：运行 beike login 获取登录链接并打开获取 API Key"
-    echo "  beike login"
-    echo ""
-    echo "获取后保存："
-    echo "  beike auth <YOUR_API_KEY> --save"
+    if [[ "$SKIP_LOGIN_HINT" != "1" ]]; then
+        echo ""
+        echo "下一步：运行 beike login 获取登录链接并打开获取 API Key"
+        echo "  beike login"
+        echo ""
+        echo "获取后保存："
+        echo "  beike auth <YOUR_API_KEY> --save"
+    fi
 }
 
 main "$@"

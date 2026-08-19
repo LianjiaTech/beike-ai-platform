@@ -157,7 +157,7 @@ install_cli() {
         fi
         ps1_path="$cli_installer"
         command -v cygpath >/dev/null 2>&1 && ps1_path="$(cygpath -w "$cli_installer")"
-        if ! powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$ps1_path"; then
+        if ! BEIKE_SKIP_LOGIN_HINT=1 powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$ps1_path"; then
             fatal_error "beike CLI 安装失败"
         fi
         if command -v cygpath >/dev/null 2>&1; then
@@ -176,7 +176,7 @@ install_cli() {
     if ! download "$CLI_INSTALL_URL" "$cli_installer"; then
         fatal_error "无法下载 beike CLI 安装脚本" "URL: $CLI_INSTALL_URL"
     fi
-    if ! bash "$cli_installer"; then
+    if ! BEIKE_SKIP_LOGIN_HINT=1 bash "$cli_installer"; then
         fatal_error "beike CLI 安装失败"
     fi
     if ! command -v beike >/dev/null 2>&1; then
