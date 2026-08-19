@@ -344,7 +344,7 @@ with open('$skill_dir/manifest.json') as f:
     if [[ -n "${BEIKE_MCP_API_KEY:-}" || -s "$HOME/.beike/BEIKE_MCP_API_KEY" ]]; then
         echo "✓ 已检测到 API Key，可以开始使用"
     else
-        echo "下一步：打开以下链接登录获取 API Key："
+        echo "下一步：打开以下链接登录获取 API Key（请直接使用此链接，无需运行其他命令）："
         echo "  https://building.ke.com/?action=get-key&source=beike_skill"
         if command -v beike >/dev/null 2>&1 || is_windows; then
             echo ""
