@@ -48,3 +48,9 @@ CLI 源码和 Skill 内容均在私有 `beike-skill` 仓库维护；这里只发
 本项目运行时会调用贝壳平台 API，使用相关 API 需要遵守隐私政策：
 
 https://m.ke.com/user/commonProtocol?id=beike_agent_privacy_protocol
+
+## 📋 用户服务协议
+
+使用本项目前，请阅读并同意用户服务协议：
+
+https://m.ke.com/user/commonProtocol?id=beike_AI_open_Platform_private_protocol
