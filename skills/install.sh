@@ -139,11 +139,11 @@ install_cli() {
     if command -v beike >/dev/null 2>&1; then
         local local_version
         local_version=$(beike --version 2>/dev/null | grep -oE '[0-9]+\.[0-9]+\.[0-9]+' | head -1)
-        if [[ -n "$remote_version" && "$local_version" == "$remote_version" ]]; then
-            echo "✓ beike CLI 已是最新版本 ($local_version)，跳过"
+        if [[ -n "$remote_version" && "${local_version:-}" == "$remote_version" ]]; then
+            echo "✓ beike CLI 已是最新版本 (${local_version:-})，跳过"
             return
         fi
-        echo "==> 升级 beike CLI $local_version → $remote_version..."
+        echo "==> 升级 beike CLI ${local_version:-} → $remote_version..."
     else
         echo "==> 未检测到 beike CLI，正在安装必要依赖..."
     fi
@@ -278,11 +278,11 @@ with open('$skill_dir/manifest.json') as f:
     print(json.load(f).get('version', 'unknown'))
 " 2>/dev/null) || local_version="unknown"
 
-            if [[ "$local_version" == "$version" ]]; then
+            if [[ "${local_version:-}" == "$version" ]]; then
                 echo "  ℹ 已是最新版本，跳过"
                 continue
             else
-                echo "  ℹ 本地版本 $local_version，准备更新"
+                echo "  ℹ 本地版本 ${local_version:-}，准备更新"
             fi
         fi
 
