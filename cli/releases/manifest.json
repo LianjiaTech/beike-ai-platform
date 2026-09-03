@@ -22,6 +22,12 @@
           "arch": "amd64",
           "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/v0.2.25/beike-win32-x64-0.2.25.tar.gz",
           "sha256": "07b3b22a62bf8c7e040b0a66ea1c565f6cd3b77b98c7fbe70546a0016be4ef48"
+        },
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/v0.2.25/beike-linux-x64-0.2.25.tar.gz",
+          "sha256": "42e9346679a01d8721d4960139e533f792f3fbcbc32fe9b40c25d01e306fc25c"
         }
       ]
     },
