@@ -1,0 +1,55 @@
+name: smoke-linux-arm64
+
+# 在真实 ARM64 Linux runner 上冒烟测试已发布的 linux-arm64 (musl 静态) 二进制。
+# 触发：手动 + 每次 release 发布后自动跑。
+
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-24.04-arm
+    steps:
+      - name: 解析目标版本
+        id: version
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ github.event_name }}" = "release" ]; then
+            tag="${{ github.event.release.tag_name }}"
+          else
+            tag="$(gh release list --repo "${{ github.repository }}" \
+              --limit 1 --json tagName --jq '.[0].tagName')"
+          fi
+          version="${tag#v}"
+          echo "tag=${tag}" >> "${GITHUB_OUTPUT}"
+          echo "version=${version}" >> "${GITHUB_OUTPUT}"
+
+      - name: 下载并运行 linux-arm64 二进制
+        run: |
+          set -euo pipefail
+          version="${{ steps.version.outputs.version }}"
+          asset="beike-linux-arm64-${version}.tar.gz"
+          url="https://github.com/${{ github.repository }}/releases/download/v${version}/${asset}"
+          echo "==> 下载 ${url}"
+          # release 事件可能在资产上传完成前触发，故重试几次
+          ok=0
+          for i in 1 2 3 4 5 6; do
+            if curl -fsSL -o beike.tar.gz "${url}"; then ok=1; break; fi
+            echo "  第 ${i} 次下载失败，5s 后重试"
+            sleep 5
+          done
+          [ "${ok}" = "1" ]
+          tar -xzf beike.tar.gz
+          chmod +x beike
+
+          echo "==> --version"
+          ./beike --version
+          echo "==> --help"
+          ./beike --help >/dev/null && echo "OK: --help 正常"
+          file beike
