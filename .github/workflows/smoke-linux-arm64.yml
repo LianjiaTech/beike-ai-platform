@@ -37,6 +37,18 @@ jobs:
           echo "tag=${tag}" >> "${GITHUB_OUTPUT}"
           echo "version=${version}" >> "${GITHUB_OUTPUT}"
 
+      # mac 先行 bump 创建 release 时，linux-arm64 资产往往还没补发（由 release.sh --package-only 稍后补）。
+      # 此时 release 事件触发本 workflow 会误报红——检测到资产不存在就优雅跳过，等手动/补发后再真验。
+      - name: release 事件下检查 linux-arm64 资产是否已补发
+        if: github.event_name == 'release'
+        run: |
+          version="${{ steps.version.outputs.version }}"
+          asset="beike-linux-arm64-${version}.tar.gz"
+          if ! curl -fsI "https://github.com/${{ github.repository }}/releases/download/v${version}/${asset}" >/dev/null 2>&1; then
+            echo "::notice::该 release 尚无 linux-arm64 资产（稍后补发），跳过本次冒烟"
+            exit 0
+          fi
+
       - name: 下载并运行 linux-arm64 二进制
         run: |
           set -euo pipefail
