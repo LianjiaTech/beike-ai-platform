@@ -23,8 +23,15 @@ jobs:
           if [ "${{ github.event_name }}" = "release" ]; then
             tag="${{ github.event.release.tag_name }}"
           else
-            tag="$(gh release list --repo "${{ github.repository }}" \
-              --limit 1 --json tagName --jq '.[0].tagName')"
+            # 本仓库同时托管 CLI(vX.Y.Z) 与 Skills(skills-日期) 两类 release，
+            # 必须只取最新的 CLI 版本 tag，避免解析到 skills 的 release。
+            tag="$(gh release list --repo "${{ github.repository }}" --limit 30 \
+              --json tagName \
+              --jq '[.[].tagName | select(test("^v[0-9]+\\.[0-9]+\\.[0-9]+$"))][0]')"
+            if [ -z "${tag}" ]; then
+              echo "::error::未找到 CLI 版本 release（vX.Y.Z），无法冒烟"
+              exit 1
+            fi
           fi
           version="${tag#v}"
           echo "tag=${tag}" >> "${GITHUB_OUTPUT}"
