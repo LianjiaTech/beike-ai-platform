@@ -1,75 +1,75 @@
 {
-  "latest": "1.1.6",
+  "latest": "0.1.10",
   "skills": [
     {
       "name": "beike-buy",
       "displayName": "贝壳买房助手",
-      "version": "0.3.9",
+      "version": "0.3.10",
       "archiveName": "beike-buy-skill",
-      "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/skills-2026.09.02/beike-buy-skill-0.3.9.zip",
-      "sha256": "79038a666c5ce2871f98656d1daafe8c53ecd8d59986e1cc1684e6798da473b4",
+      "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/skills-2026.09.10/beike-buy-skill-0.3.10.zip",
+      "sha256": "6997dcc26bb3ddeeee024aabc7ef598be5ac84e3a6f8382631426ddc4df1c313",
       "sourceSha256": "4733bbd3a002cf1583af39ded10234557806851be626e7aa7deb1fb01de06209"
     },
     {
       "name": "beike-market",
       "displayName": "贝壳行情顾问",
-      "version": "0.1.9",
+      "version": "0.1.10",
       "archiveName": "beike-market-skill",
-      "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/skills-2026.09.02/beike-market-skill-0.1.9.zip",
-      "sha256": "12420c4f0138430f0eaa8e38d66a47b9b6882fb5b17084e23502dfd50341ecb2",
+      "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/skills-2026.09.10/beike-market-skill-0.1.10.zip",
+      "sha256": "c80dceed1cbb0fc171721781763f80f7c9586a76524b5762eacfe3a646035128",
       "sourceSha256": "497f33a8d1cf6f1b06129d5998c50479b962ed1cc87d926932515f1cb9afbb28"
     },
     {
       "name": "beike-policy",
       "displayName": "贝壳政策顾问",
-      "version": "0.1.9",
+      "version": "0.1.10",
       "archiveName": "beike-policy-skill",
-      "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/skills-2026.09.02/beike-policy-skill-0.1.9.zip",
-      "sha256": "1cd9bf202d7755a55321dab3acdf28ca71e510e16eee29886762ec174e5eabe7",
+      "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/skills-2026.09.10/beike-policy-skill-0.1.10.zip",
+      "sha256": "a3b16073a94edb4e4c99993990d6afd67017c4ce9c6780bfead2efea4d13d9ab",
       "sourceSha256": "7ec1661be6e48d670768ef1691abbb46b10929efaa4fc41bcc544d38c0d12c9b"
     },
     {
       "name": "beike-rent",
       "displayName": "贝壳租房助手",
-      "version": "0.3.14",
+      "version": "0.3.15",
       "archiveName": "beike-rent-skill",
-      "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/skills-2026.09.02/beike-rent-skill-0.3.14.zip",
-      "sha256": "9d549a77d31cdc1e3ae5cead376da42ec1df60dec127c5f456522d3468f6af66",
+      "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/skills-2026.09.10/beike-rent-skill-0.3.15.zip",
+      "sha256": "9d1b6ad4f99ca25dcf3b5c010f585276fb30101175f60b6b7d861faf30521469",
       "sourceSha256": "8ea49e193c013c4b69bc215ff15a0350f04058ba520d1c64797c9588f5b04b38"
     },
     {
       "name": "beike-school",
       "displayName": "贝壳学区顾问",
-      "version": "0.1.9",
+      "version": "0.1.10",
       "archiveName": "beike-school-skill",
-      "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/skills-2026.09.02/beike-school-skill-0.1.9.zip",
-      "sha256": "61aeab807c5a9194589a07478e57f5c5e24600cf0d372a67f77b5ab0129fc0e3",
+      "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/skills-2026.09.10/beike-school-skill-0.1.10.zip",
+      "sha256": "d826ee8eb571d45b9dbea4c7c2e77b23cb658a907731274a994c05cd29b0b212",
       "sourceSha256": "097a3e2e3f41e63ec7f9847ce679830e53862b3473332272ffafd13f079f7bac"
     },
     {
       "name": "beike-sell",
       "displayName": "贝壳卖房助手",
-      "version": "0.1.9",
+      "version": "0.1.10",
       "archiveName": "beike-sell-skill",
-      "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/skills-2026.09.02/beike-sell-skill-0.1.9.zip",
-      "sha256": "e55d11fb2c900e789bb4f699bc974202eb62d9c80cb2c63d530d1517d6f2dac3",
+      "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/skills-2026.09.10/beike-sell-skill-0.1.10.zip",
+      "sha256": "575ee13e1dfa11ee3862d310b526620e81c7d8dc4be9dac4209348bd1251fe0b",
       "sourceSha256": "29e4887e41ee0345afd1d505571d550102709696d243741e410f6f0e4a014213"
     },
     {
       "name": "beike-decor",
       "displayName": "贝壳装修助手",
-      "version": "0.1.9",
+      "version": "0.1.10",
       "archiveName": "beike-decor-skill",
-      "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/skills-2026.09.02/beike-decor-skill-0.1.9.zip",
-      "sha256": "bab26704111ca137e66d417a7ff26b30cac5f8a71e2f19220b9b3db400a92ca5",
+      "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/skills-2026.09.10/beike-decor-skill-0.1.10.zip",
+      "sha256": "afb73adc10bc8a3c69402a323a7bcc70c204d3b9e50253a512278571120bc441",
       "sourceSha256": "076db731d70ddd928229e4eb78038bde4809fa78cd72781edb70340ce5b3fe18"
     },
     {
       "name": "beike-assistant",
-      "version": "1.1.6",
+      "version": "1.1.7",
       "archiveName": "beike-assistant-skill",
-      "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/skills-2026.09.02-1/beike-assistant-skill-1.1.6.zip",
-      "sha256": "fea9062dac2b3a0efbd203c84850aaa01ff9c085d64de41220defa2d2964f59e"
+      "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/skills-2026.09.10/beike-assistant-skill-1.1.7.zip",
+      "sha256": "b25d354de97ab8027520ca5b3348a3c361962e34090814840e6982abefc39539"
     }
   ]
 }
