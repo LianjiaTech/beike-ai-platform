@@ -16,6 +16,12 @@
           "arch": "amd64",
           "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/v0.2.28/beike-darwin-x64-0.2.28.tar.gz",
           "sha256": "9b4bf0fb23bbc4ed596583717025ea8b2d5b31cf7fba63dc8c4cb09f1154fcf0"
+        },
+        {
+          "os": "windows",
+          "arch": "amd64",
+          "url": "https://github.com/LianjiaTech/beike-ai-platform/releases/download/v0.2.28/beike-win32-x64-0.2.28.tar.gz",
+          "sha256": "12355e6c1f87d32667e60fc6a39d11ff379d34d5a05cb68026a2bc3fa24844bf"
         }
       ]
     },
